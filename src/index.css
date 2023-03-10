@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --desktopNavHeight: 56px;
+
+    --primary-color: #a62117;
+    --ui-primary-font-color: #191919;
+  }
+}
