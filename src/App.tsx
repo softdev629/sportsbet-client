@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Header from "./components/header";
 import MainPage from "./pages/main";
 import OneNews from "./pages/news/one";
+import AllNews from "./pages/news/all";
 import "./App.css";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Header />}>
             <Route path="/" element={<MainPage />} />
+            <Route path="/news" element={<AllNews />} />
             <Route path="/news/:id" element={<OneNews />} />
           </Route>
         </Routes>

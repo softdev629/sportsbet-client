@@ -5,6 +5,8 @@ export interface Article {
   description: string | null;
   url: string;
   urlToImage: string | null;
+  author: string | null;
+  publishedAt: string;
 }
 
 interface ArticleState {

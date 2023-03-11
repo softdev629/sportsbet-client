@@ -5,6 +5,9 @@ module.exports = {
     extend: {},
     colors: {
       primary: "var(--primary-color)",
+      secondary: "var(--secondary-color)",
+      darkgrey: "var(--ui-dark-grey)",
+      mediumgrey: "var(--ui-medium-grey)",
     },
     container: {
       center: true,
