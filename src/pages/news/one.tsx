@@ -46,7 +46,11 @@ const OneNews = () => {
             <img className="mb-6" src={article.urlToImage} />
           )}
         </div>
-        {loading && <div>Generating article...</div>}
+        {loading && (
+          <div className="flex justify-center text-[72px]">
+            Generating article...
+          </div>
+        )}
         {!loading && <p>{content}</p>}
       </div>
     </main>
