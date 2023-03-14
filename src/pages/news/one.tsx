@@ -18,7 +18,7 @@ const OneNews = () => {
     setLoading(true);
     axios
       .post(
-        "http://localhost:9000/api/get-article",
+        "/api/get-article",
         { address: article.url },
         {
           headers: {
