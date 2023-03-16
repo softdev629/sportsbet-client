@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useAppSelector } from "../../hooks/reduxHooks";
 
@@ -18,7 +18,7 @@ const OneNews = () => {
     setLoading(true);
     axios
       .post(
-        "/api/get-article",
+        "http://localhost:9000/api/get-article",
         { address: article.url },
         {
           headers: {

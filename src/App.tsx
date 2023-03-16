@@ -4,6 +4,7 @@ import MainPage from "./pages/main";
 import OneNews from "./pages/news/one";
 import AllNews from "./pages/news/all";
 import "./App.css";
+import TemplateTSX from "./pages/news/template";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <Route path="/" element={<MainPage />} />
             <Route path="/news" element={<AllNews />} />
             <Route path="/news/:id" element={<OneNews />} />
+            <Route path="/template" element={<TemplateTSX />} />
           </Route>
         </Routes>
       </Router>

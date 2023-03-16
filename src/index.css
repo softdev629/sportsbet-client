@@ -11,6 +11,25 @@
     --ui-primary-font-color: #191919;
     --ui-dark-grey: #191919;
     --ui-medium-grey: #575757;
-    
   }
+}
+
+@font-face {
+  font-family: "primary-regular";
+  src: url("/public/assets/fonts/primary-regular.woff2");
+}
+
+@font-face {
+  font-family: "primary-bold";
+  src: url("/public/assets/fonts/primary-bold.woff2");
+}
+
+@font-face {
+  font-family: "secondary-regular";
+  src: url("/public/assets/fonts/secondary-regular.woff2");
+}
+
+@font-face {
+  font-family: "secondary-bold";
+  src: url("/public/assets/fonts/secondary-bold.woff2");
 }

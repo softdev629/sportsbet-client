@@ -5,6 +5,7 @@ module.exports = {
     extend: {},
     colors: {
       primary: "var(--primary-color)",
+      primaryfont: "var(--ui-primary-font-color)",
       secondary: "var(--secondary-color)",
       darkgrey: "var(--ui-dark-grey)",
       mediumgrey: "var(--ui-medium-grey)",
@@ -19,7 +20,10 @@ module.exports = {
       },
     },
     fontFamily: {
-      serif: ["primary-bold", "serif"],
+      primary: ["primary-regular", "serif"],
+      primarybold: ["primary-bold", "serif"],
+      secondary: ["secondary-regular", "sans-serif"],
+      secondarybold: ["secondary-bold", "sans-serif"],
     },
   },
   plugins: [],
