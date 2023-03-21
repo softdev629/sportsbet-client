@@ -1,3 +1,4 @@
+import React from "react";
 import TopStories from "../main/TopStories";
 import { useAppSelector } from "../../hooks/reduxHooks";
 import { NavLink } from "react-router-dom";
@@ -11,13 +12,12 @@ const AllNews = () => {
         <div className="flex mt-4 space-x-3">
           <div className="basis-7/12">
             {topArticles.map((topArticle, index) => (
-              <>
+              <div key={index}>
                 <div
                   className="grid grid-cols-[minmax(0,calc(35%))_1fr] grid-rows-[auto_minmax(0,1fr)] gap-x-8 py-4"
                   style={{
                     gridTemplateAreas: `"image headline" "image description"`,
                   }}
-                  key={index}
                 >
                   <img
                     src={
@@ -53,7 +53,7 @@ const AllNews = () => {
                 {index < topArticles.length - 1 && (
                   <hr className="opacity-25" />
                 )}
-              </>
+              </div>
             ))}
           </div>
           <div className="basis-1/12"></div>

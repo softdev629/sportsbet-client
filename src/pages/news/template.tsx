@@ -1,4 +1,6 @@
-const TemplateTSX = () => {
+import React from "react";
+
+const SampleTemplateTSX = () => {
   return (
     <main className="text-primaryfont">
       <div className="container px-3">
@@ -88,4 +90,4 @@ const TemplateTSX = () => {
   );
 };
 
-export default TemplateTSX;
+export default SampleTemplateTSX;
